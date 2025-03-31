@@ -1,4 +1,4 @@
-#Recursos Utilizados
+# Recursos Utilizados
 
 Java 24: Lenguaje de programación para la implementación del backend.
 
@@ -11,7 +11,7 @@ Computadora con Windows 11.
 Instalación del software en una máquina virtual.
 
 ***
-#Clonar el Repositorio
+# Clonar el Repositorio
 
 Para clonar este repositorio, ejecute el siguiente comando en su terminal:
 
