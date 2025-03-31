@@ -1,0 +1,35 @@
+<!DOC<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+<div class="bg-white p-6 rounded-lg shadow-lg w-96">
+    <h2 class="text-xl font-bold mb-4 text-center">Cálculo de Sueldo Neto</h2>
+    <form action="ejercicio2.jsp" method="post" class="space-y-4">
+        <label class="block">Sueldo Base:
+            <input type="number" name="sueldo" class="w-full border rounded p-2" required>
+        </label>
+
+        <label class="block">Estado Civil:
+            <select name="estadoCivil" class="w-full border rounded p-2">
+                <option value="Casado">Casado</option>
+                <option value="Viudo">Viudo</option>
+                <option value="Soltero">Soltero</option>
+            </select>
+        </label>
+
+        <label class="block">Número de Hijos:
+            <input type="number" name="numHijos" class="w-full border rounded p-2" min="0" required>
+        </label>
+
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+            Calcular Neto a Cobrar
+        </button>
+    </form>
+</div>
+</body>
+</html>

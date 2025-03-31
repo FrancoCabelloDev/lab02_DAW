@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+<div class="bg-white p-6 rounded-lg shadow-md w-96">
+    <h2 class="text-xl font-bold mb-4 text-center">Calculadora de Sueldo Mensual</h2>
+    <form action="ejercicio3.jsp" method="post" class="space-y-4">
+        <label class="block">Tipo de prenda:</label>
+        <select name="prenda" class="w-full p-2 border rounded">
+            <option value="0.50">Polo</option>
+            <option value="1.00">Camisa</option>
+            <option value="1.50">Pantalon</option>
+        </select>
+
+        <label class="block">Cantidad confeccionada:</label>
+        <input type="number" name="cantidad" required class="w-full p-2 border rounded">
+
+        <label class="block">Categoría:</label>
+        <select name="categoria" class="w-full p-2 border rounded">
+            <option value="250.00">A</option>
+            <option value="150.00">B</option>
+            <option value="100.00">C</option>
+            <option value="50.00">D</option>
+        </select>
+
+        <input type="submit" value="Calcular Sueldo" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+<div class="bg-white p-6 rounded-lg shadow-md w-96">
+    <h2 class="text-xl font-semibold text-center mb-4">Calculadora de Cuotas</h2>
+    <form action="ejercicio1.jsp" method="post" class="space-y-4">
+        <label class="block text-gray-700">Seleccione el colegio:</label>
+        <select name="colegio" required class="w-full p-2 border rounded">
+            <option value="Nacional">Nacional</option>
+            <option value="Particular">Particular</option>
+        </select>
+
+        <label class="block text-gray-700">Seleccione la categoría:</label>
+        <select name="categoria" required class="w-full p-2 border rounded">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <label class="block text-gray-700">Ingrese la cuota mensual (S/):</label>
+        <input type="number" name="cuota" step="0.01" required class="w-full p-2 border rounded">
+
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+            Calcular
+        </button>
+    </form>
+</div>
+</body>
+</html>
